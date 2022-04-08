@@ -11,9 +11,9 @@ setuptools.setup(
     description="Portuguese fiscal documents QR Code library",
     long_description=long_description,
     long_description_content_type="text/x-rst",
-    url="",
+    url="https://github.com/tavaresb/python-pt-at-qr-code",
     project_urls={
-        "Bug Tracker": "https://github.com/pypa/sampleproject/issues",
+        "Bug Tracker": "https://github.com/tavaresb/python-pt-at-qr-code/issues",
     },
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -23,6 +23,4 @@ setuptools.setup(
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
     python_requires=">=3.6",
-    test_suite='nose.collector',
-    tests_require=['nose'],
 )
