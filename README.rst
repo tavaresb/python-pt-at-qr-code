@@ -2,6 +2,9 @@
  Portugal Fiscal Document QR Code 
 ===================================================================== 
 
+.. image:: https://circleci.com/gh/tavaresb/python-pt-at-qr-code.svg?style=svg
+    :target: https://circleci.com/gh/tavaresb/python-pt-at-qr-code
+
 About
 =====
 
