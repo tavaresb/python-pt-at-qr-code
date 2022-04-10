@@ -5,7 +5,7 @@ with open("README.rst", "r") as fh:
 
 setuptools.setup(
     name="python-pt-at-qr-code",
-    version="0.0.2",
+    version="0.0.3",
     author="Bruno Tavares",
     author_email="tavares.b@gmail.com",
     description="Portuguese fiscal documents QR Code library",

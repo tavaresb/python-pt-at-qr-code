@@ -10,7 +10,7 @@ class TestFieldRegistry(TestCase):
       reg = self.registry 
       field_a = reg.get_field('A')
       self.assertTrue(field_a is not None)
-      self.assertEqual(field_a['human'], 'seller_vat_number')
+      self.assertEqual(field_a['h'], 'seller_vat_number')
 
     def test_invalid_field(self):
       reg = self.registry 

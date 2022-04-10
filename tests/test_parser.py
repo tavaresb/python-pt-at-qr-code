@@ -1,6 +1,7 @@
 from unittest import TestCase
 
 from pt_at_qr_code import Parser
+from pt_at_qr_code.exceptions import InvalidQRCode 
 
 class TestParser(TestCase):
     def test_example1(self):
@@ -9,6 +10,10 @@ class TestParser(TestCase):
       res = parser.parse(str)
       
       self.assertEqual(res['A'], '123456789')
-      self.assertEqual(res['A'], '123456789')
+      self.assertEqual(res['B'], '999999990')
       self.assertEqual(res['O'], 513600.58)
      
+    def test_invalid_qr_code(self):
+      str = 'A:123456789*B:999999990'
+      parser = Parser()
+      self.assertRaises(InvalidQRCode, parser.parse, str)
